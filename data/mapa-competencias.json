@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "ejesTransversales": [
+    "Ética y responsabilidad",
+    "Protección de datos y privacidad",
+    "Propiedad intelectual",
+    "Accesibilidad y diseño universal",
+    "Aprendizaje basado en casos prácticos",
+    "Comunicación y soft skills"
+  ],
+  "capas": [
+    {
+      "id": "acceso-confianza",
+      "nombre": "Acceso y confianza digital",
+      "referentes": ["IFCT117", "COMM0032", "IFCT0049"],
+      "competencias": ["usar interfaces", "formular prompts básicos", "reconocer límites", "evitar datos personales"]
+    },
+    {
+      "id": "productividad",
+      "nombre": "Productividad general y trabajo cotidiano",
+      "referentes": ["IFCD0099", "IFCT0073"],
+      "competencias": ["redactar", "resumir", "crear materiales", "revisar resultados", "verificar información"]
+    },
+    {
+      "id": "sectorial",
+      "nombre": "Aplicación sectorial y funcional",
+      "referentes": ["COMM04", "COMM18", "COMM0042", "COMM0033", "FCOO0009"],
+      "competencias": ["marketing", "comercio", "experiencia de cliente", "orientación laboral", "automatización responsable"]
+    },
+    {
+      "id": "tecnica",
+      "nombre": "Base técnica de datos y modelos",
+      "referentes": ["IFCD107", "IFCD112", "IFCD99", "IFCD104", "IFC749_3"],
+      "competencias": ["datasets", "preprocesado", "machine learning", "deep learning", "validación", "AutoML"]
+    },
+    {
+      "id": "infraestructura",
+      "nombre": "Infraestructura y explotación de sistemas",
+      "referentes": ["IFC750_3", "RD 184/2026"],
+      "competencias": ["cloud", "edge", "APIs", "monitorización", "despliegue", "operación de sistemas"]
+    }
+  ],
+  "taxonomia": [
+    "especialidad formativa no formal",
+    "curso programático oficial o coyuntural",
+    "estándar competencial / ECP",
+    "cualificación profesional",
+    "certificado de competencia",
+    "certificado profesional",
+    "curso de especialización formal",
+    "benchmark avanzado"
+  ]
+}
