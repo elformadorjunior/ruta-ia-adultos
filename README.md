@@ -1,0 +1,5 @@
+# Ruta IA para Adultos
+
+Repositorio base para revisar la primera iteración del MVP mediante Pull Request.
+
+Este proyecto es un recurso educativo personal de El Formador Junior. No es un recurso oficial del SCE, SEPE, BOE, ICSE ni de ninguna entidad formativa.
