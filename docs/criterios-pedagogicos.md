@@ -14,6 +14,15 @@
 
 El recurso parte de la seguridad y la comprensión crítica antes de entrar en productividad, aplicación sectorial o técnica.
 
+En el MVP 0.2, el diseño se enfoca como recurso metodológico docente. Cada ficha debe poder responder:
+
+- para qué sirve en aula;
+- qué actividad propone;
+- qué evidencia deja el alumnado;
+- qué límites éticos o de privacidad hay que recordar;
+- qué referentes oficiales la justifican;
+- cuándo fue revisada.
+
 Cada nivel incluye:
 
 - objetivo;

@@ -1,20 +1,32 @@
-# Ruta IA para Adultos · El Formador Junior
+# Ruta IA para Adultos · Kit metodológico docente
 
-MVP 0.1 de una herramienta educativa progresiva para personas adultas en contexto de Formación Profesional para el Empleo, formación no reglada, alfabetización digital, empleabilidad e inteligencia artificial aplicada al aprendizaje y al trabajo.
+MVP de una herramienta metodológica para que docentes, formadores y orientadores diseñen rutas de aprendizaje en inteligencia artificial para personas adultas.
+
+La herramienta conecta actividades prácticas con referentes oficiales y ayuda a distinguir especialidades formativas, estándares competenciales, cualificaciones, certificados y cursos de especialización sin prometer acreditaciones que no correspondan.
 
 Este proyecto pertenece a la línea personal y de portfolio técnico-docente de **El Formador Junior**. No es un recurso oficial del Servicio Canario de Empleo, SEPE, BOE, ICSE ni de ninguna entidad pública o privada.
 
 ## Para quién es
 
-- Personas adultas con distintos niveles digitales.
-- Formadores, orientadores o perfiles docentes que quieran ordenar recursos de IA con prudencia.
-- Personas que buscan una primera ruta clara para entender IA, IA generativa, productividad, empleo, datos y límites éticos.
+- Docentes, formadores y orientadores que preparan sesiones de IA para adultos.
+- Equipos que necesitan justificar itinerarios y actividades con prudencia institucional.
+- Alumnado adulto, mediante una vista simplificada de diagnóstico, módulo inicial y actividades guiadas.
+
+## Qué hace
+
+- Ayuda a decidir por dónde empezar según el perfil adulto.
+- Ordena referentes oficiales y piezas formativas sin mezclarlas.
+- Propone fichas metodológicas para convertir referentes en sesiones de aula.
+- Ofrece una salida simplificada para alumnado: diagnóstico, checklist y microevaluación.
+- Mantiene los datos en JSON para facilitar actualización humana del contexto.
 
 ## Qué incluye el MVP
 
-- Portada con aviso institucional y privacidad básica.
+- Portada con aviso institucional, propósito docente y privacidad básica.
+- Sección de uso: para docentes, orientadores y alumnado.
 - Mapa de formaciones y referentes oficiales en datos JSON.
 - Ruta progresiva por 5 niveles.
+- Fichas metodológicas docentes.
 - Diagnóstico inicial local, orientativo y no oficial.
 - Primer módulo interactivo: **IA sin humo: qué es, qué puede hacer y qué no debes hacer**.
 - Checklist de seguridad y microevaluación con feedback inmediato.
@@ -61,15 +73,19 @@ No debe presentarse como material oficial ni como sustituto de programaciones, e
 
 Pendiente de decisión. Recomendación inicial: licencia abierta para el código y licencia documental que permita reutilización con atribución, siempre preservando el aviso no oficial.
 
+## Actualización del contexto
+
+La actualización es humana y revisable. Las fichas pueden marcar estado, fecha de revisión, referentes, actividad, evidencia y salida para alumnado. En esta fase no hay scraping automático ni backend.
+
 ## Estado actual
 
-MVP 0.1 en desarrollo. Primera versión navegable, estática y documentada.
+MVP 0.2 en desarrollo. Primera versión publicada en GitHub Pages y reposicionada como kit metodológico docente.
 
 ## Próximos pasos
 
 - Revisar cada ficha contra fuentes oficiales actualizadas.
 - Añadir validación de accesibilidad más completa.
-- Añadir más módulos formativos.
+- Añadir más fichas metodológicas y módulos formativos.
 - Separar filtros por familia, nivel y tipo de pieza.
 - Preparar una versión imprimible para aula.
 - Definir licencia y política de contribución.

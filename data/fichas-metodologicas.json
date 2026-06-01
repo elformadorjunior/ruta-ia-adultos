@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "ultimaRevisionGlobal": "2026-06-01",
+  "criterioActualizacion": "Revision humana de fuentes oficiales, fichas SCE/SEPE/BOE y necesidades reales de aula.",
+  "fichas": [
+    {
+      "id": "sesion-ia-sin-humo",
+      "titulo": "Sesion 1: IA sin humo",
+      "nivel": "Nivel 1",
+      "estado": "lista para aula",
+      "ultimaRevision": "2026-06-01",
+      "referentes": ["IFCT117", "IFCT0049", "COMM0032"],
+      "usoDocente": "Introducir IA generativa con prudencia, separando ayuda al aprendizaje de copia o sustitucion del criterio humano.",
+      "actividad": "Analizar tres usos de IA: uno seguro, uno dudoso y uno no aceptable. El grupo justifica cada decision.",
+      "evidencia": "Tabla breve con uso, riesgo, forma de verificacion y decision final.",
+      "salidaAlumno": "Se lleva una checklist de uso seguro y un prompt de estudio que no pide respuestas finales."
+    },
+    {
+      "id": "sesion-productividad-estudio",
+      "titulo": "Sesion 2: Productividad y estudio",
+      "nivel": "Nivel 2",
+      "estado": "borrador revisable",
+      "ultimaRevision": "2026-06-01",
+      "referentes": ["IFCD0099", "IFCT0073"],
+      "usoDocente": "Convertir IA generativa en una herramienta de planificacion, resumen y practica sin entregar tareas hechas.",
+      "actividad": "Partir de un tema real del curso y crear una guia de repaso con preguntas, fuentes de contraste y resumen propio.",
+      "evidencia": "Borrador inicial, mejoras humanas y version final explicada por el alumno.",
+      "salidaAlumno": "Aprende a pedir ayuda, comprobar respuestas y reescribir con sus palabras."
+    },
+    {
+      "id": "sesion-ia-empleo-orientacion",
+      "titulo": "Sesion 3: IA para empleo y orientacion",
+      "nivel": "Nivel 3",
+      "estado": "pendiente de contraste sectorial",
+      "ultimaRevision": "2026-06-01",
+      "referentes": ["FCOO0009", "COMM04", "COMM0033"],
+      "usoDocente": "Aplicar IA a empleabilidad, comercio u orientacion laboral usando casos ficticios para proteger datos personales.",
+      "actividad": "Crear un caso ficticio de persona candidata o pequeno comercio y proponer tres apoyos de IA con limites claros.",
+      "evidencia": "Ficha de caso con objetivo, datos ficticios, herramienta, riesgo, supervision humana y resultado esperado.",
+      "salidaAlumno": "Entiende que la IA puede apoyar decisiones, pero no sustituir orientacion profesional ni datos reales sensibles."
+    },
+    {
+      "id": "sesion-datos-modelos",
+      "titulo": "Sesion 4: De prompts a datos y modelos",
+      "nivel": "Nivel 4",
+      "estado": "avanzada",
+      "ultimaRevision": "2026-06-01",
+      "referentes": ["IFCD107", "IFCD112", "IFC749_3", "ECP2492_3-ECP2497_3"],
+      "usoDocente": "Mostrar la diferencia entre usar una IA generativa y comprender datos, entrenamiento, validacion y responsabilidad.",
+      "actividad": "Mapear un caso tecnico ficticio contra datos necesarios, riesgos de sesgo, validacion y evidencia competencial.",
+      "evidencia": "Mapa problema-datos-modelo-validacion con una advertencia de Responsible AI.",
+      "salidaAlumno": "Distingue uso instrumental de IA de itinerarios tecnicos hacia datos, modelos y especializacion."
+    }
+  ]
+}

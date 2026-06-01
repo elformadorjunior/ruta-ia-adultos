@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 - 2026-06-01
+
+- Reposicionado el recurso como kit metodológico docente con salida simplificada para alumnado.
+- Añadida sección sobre utilidad real de la herramienta para docentes, orientadores y alumnado.
+- Añadidas fichas metodológicas en `data/fichas-metodologicas.json`.
+- Añadida sección de fichas docentes renderizada en la interfaz.
+- Mejorada la experiencia móvil básica en botones, tarjetas y espaciados.
+- Actualizada documentación para explicar la actualización humana del contexto.
+
 ## 0.1.0 - 2026-05-31
 
 - Creada primera versión navegable del MVP **Ruta IA para Adultos · El Formador Junior**.

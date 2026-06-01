@@ -1,7 +1,8 @@
 const DATA_PATHS = {
   catalogo: "data/catalogo-formaciones.json",
   itinerarios: "data/itinerarios-adultos.json",
-  competencias: "data/mapa-competencias.json"
+  competencias: "data/mapa-competencias.json",
+  fichas: "data/fichas-metodologicas.json"
 };
 
 const profileQuestions = [
@@ -152,6 +153,24 @@ function renderItinerario(levels) {
   `).join("");
 }
 
+function renderFichas(fichas) {
+  const list = document.querySelector("#fichas-list");
+  list.innerHTML = fichas.map((ficha) => `
+    <article class="method-card">
+      <div class="method-card__meta">
+        <span>${ficha.nivel}</span>
+        <span>${ficha.estado}</span>
+      </div>
+      <h3>${ficha.titulo}</h3>
+      <p><strong>Uso docente:</strong> ${ficha.usoDocente}</p>
+      <p><strong>Actividad:</strong> ${ficha.actividad}</p>
+      <p><strong>Evidencia:</strong> ${ficha.evidencia}</p>
+      <p><strong>Salida alumnado:</strong> ${ficha.salidaAlumno}</p>
+      <p class="small-note">Referentes: ${ficha.referentes.join(", ")} · Última revisión: ${ficha.ultimaRevision}</p>
+    </article>
+  `).join("");
+}
+
 function renderProfileQuestions() {
   const container = document.querySelector("#profile-questions");
   container.innerHTML = profileQuestions.map((question, index) => `
@@ -252,13 +271,15 @@ async function init() {
   bindMicroForm();
   bindSafetyChecklist();
 
-  const [catalogo, itinerarios] = await Promise.all([
+  const [catalogo, itinerarios, fichas] = await Promise.all([
     fetch(DATA_PATHS.catalogo).then((response) => response.json()),
-    fetch(DATA_PATHS.itinerarios).then((response) => response.json())
+    fetch(DATA_PATHS.itinerarios).then((response) => response.json()),
+    fetch(DATA_PATHS.fichas).then((response) => response.json())
   ]);
   renderCatalog(catalogo.formaciones);
   bindCatalogFilters(catalogo.formaciones);
   renderItinerario(itinerarios.niveles);
+  renderFichas(fichas.fichas);
 }
 
 init().catch((error) => {
