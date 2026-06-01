@@ -23,6 +23,7 @@ Este proyecto pertenece a la línea personal y de portfolio técnico-docente de 
 ## Qué incluye el MVP
 
 - Portada con aviso institucional, propósito docente y privacidad básica.
+- Recorrido guiado para entender el uso docente en pocos pasos.
 - Sección de uso: para docentes, orientadores y alumnado.
 - Mapa de formaciones y referentes oficiales en datos JSON.
 - Ruta progresiva por 5 niveles.
@@ -79,12 +80,13 @@ La actualización es humana y revisable. Las fichas pueden marcar estado, fecha 
 
 ## Estado actual
 
-MVP 0.2 en desarrollo. Primera versión publicada en GitHub Pages y reposicionada como kit metodológico docente.
+MVP 0.3 en desarrollo. Primera versión publicada en GitHub Pages, reposicionada como kit metodológico docente y ajustada en experiencia de escritorio.
 
 ## Próximos pasos
 
 - Revisar cada ficha contra fuentes oficiales actualizadas.
 - Añadir validación de accesibilidad más completa.
+- Revisar experiencia móvil con capturas reales y cerrar el patrón de desplegables.
 - Añadir más fichas metodológicas y módulos formativos.
 - Separar filtros por familia, nivel y tipo de pieza.
 - Preparar una versión imprimible para aula.

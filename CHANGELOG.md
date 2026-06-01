@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 - 2026-06-01
+
+- Ajustada la experiencia de usuario de escritorio con una portada más compacta y visual.
+- Incorporada la imagen generada `hero-estudiar-ia.png` como fondo de presentación.
+- Añadido recorrido guiado por tarjetas para orientar el uso docente.
+- Mejorada la lectura de tabla, formularios, fichas y ruta progresiva.
+- Preparados ruta y fichas como bloques desplegables para futura revisión móvil.
+
 ## 0.2.0 - 2026-06-01
 
 - Reposicionado el recurso como kit metodológico docente con salida simplificada para alumnado.

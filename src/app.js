@@ -140,35 +140,53 @@ function bindCatalogFilters(items) {
 function renderItinerario(levels) {
   const list = document.querySelector("#itinerario-list");
   list.innerHTML = levels.map((level) => `
-    <article class="level">
-      <span class="number">${level.nivel}</span>
-      <h3>${level.titulo}</h3>
-      <p><strong>Objetivo:</strong> ${level.objetivo}</p>
-      <p><strong>Para quién:</strong> ${level.paraQuien}</p>
-      <p><strong>Competencias:</strong> ${level.competencias.join(", ")}.</p>
-      <p><strong>Referentes:</strong> ${level.referentes.join(", ")}.</p>
-      <p><strong>Actividad:</strong> ${level.actividadSugerida}</p>
-      <p><strong>Evidencia:</strong> ${level.evidenciaAprendizaje}</p>
-    </article>
+    <details class="level guided-detail" open>
+      <summary>
+        <span class="number">${level.nivel}</span>
+        <span>${level.titulo}</span>
+      </summary>
+      <div class="detail-body">
+        <p><strong>Objetivo:</strong> ${level.objetivo}</p>
+        <p><strong>Para quién:</strong> ${level.paraQuien}</p>
+        <p><strong>Competencias:</strong> ${level.competencias.join(", ")}.</p>
+        <p><strong>Referentes:</strong> ${level.referentes.join(", ")}.</p>
+        <p><strong>Actividad:</strong> ${level.actividadSugerida}</p>
+        <p><strong>Evidencia:</strong> ${level.evidenciaAprendizaje}</p>
+      </div>
+    </details>
   `).join("");
 }
 
 function renderFichas(fichas) {
   const list = document.querySelector("#fichas-list");
   list.innerHTML = fichas.map((ficha) => `
-    <article class="method-card">
-      <div class="method-card__meta">
-        <span>${ficha.nivel}</span>
-        <span>${ficha.estado}</span>
+    <details class="method-card guided-detail" open>
+      <summary>${ficha.titulo}</summary>
+      <div class="detail-body">
+        <div class="method-card__meta">
+          <span>${ficha.nivel}</span>
+          <span>${ficha.estado}</span>
+        </div>
+        <p><strong>Uso docente:</strong> ${ficha.usoDocente}</p>
+        <p><strong>Actividad:</strong> ${ficha.actividad}</p>
+        <p><strong>Evidencia:</strong> ${ficha.evidencia}</p>
+        <p><strong>Salida alumnado:</strong> ${ficha.salidaAlumno}</p>
+        <p class="small-note">Referentes: ${ficha.referentes.join(", ")} · Última revisión: ${ficha.ultimaRevision}</p>
       </div>
-      <h3>${ficha.titulo}</h3>
-      <p><strong>Uso docente:</strong> ${ficha.usoDocente}</p>
-      <p><strong>Actividad:</strong> ${ficha.actividad}</p>
-      <p><strong>Evidencia:</strong> ${ficha.evidencia}</p>
-      <p><strong>Salida alumnado:</strong> ${ficha.salidaAlumno}</p>
-      <p class="small-note">Referentes: ${ficha.referentes.join(", ")} · Última revisión: ${ficha.ultimaRevision}</p>
-    </article>
+    </details>
   `).join("");
+}
+
+function configureResponsiveDetails() {
+  const details = Array.from(document.querySelectorAll(".guided-detail"));
+  const sync = () => {
+    const compact = window.matchMedia("(max-width: 720px)").matches;
+    details.forEach((item, index) => {
+      item.open = compact ? index === 0 : true;
+    });
+  };
+  sync();
+  window.addEventListener("resize", sync);
 }
 
 function renderProfileQuestions() {
@@ -280,6 +298,7 @@ async function init() {
   bindCatalogFilters(catalogo.formaciones);
   renderItinerario(itinerarios.niveles);
   renderFichas(fichas.fichas);
+  configureResponsiveDetails();
 }
 
 init().catch((error) => {
