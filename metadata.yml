@@ -1,0 +1,22 @@
+title: "Ruta IA para Adultos · El Formador Junior"
+version: "0.1.0"
+status: "mvp"
+date: "2026-05-31"
+language: "es"
+type: "recurso educativo digital"
+audience:
+  - "personas adultas"
+  - "formación para el empleo"
+  - "alfabetización digital"
+  - "orientación laboral"
+institutional_notice: "Recurso personal, orientativo y de portfolio. No oficial del SCE, SEPE, BOE, ICSE ni de ninguna entidad formativa."
+privacy:
+  backend: false
+  analytics: false
+  login: false
+  personal_data_collection: false
+  local_storage: "Solo perfil orientativo del diagnóstico, borrable por el usuario."
+source_document: "Documento maestro de formación no reglada en inteligencia artificial para el Servicio Canario de Emp.pdf"
+deployment:
+  target: "GitHub Pages"
+  build_required: false

@@ -1,0 +1,399 @@
+{
+  "version": "0.1.0",
+  "fuenteBase": "Documento maestro de formación no reglada en inteligencia artificial para el Servicio Canario de Empleo",
+  "nota": "Inventario inicial orientativo. Debe revisarse contra las fichas oficiales antes de publicación docente.",
+  "formaciones": [
+    {
+      "codigo": "IFCT117",
+      "denominacion": "Introducción a la inteligencia artificial",
+      "horas": 25,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 1",
+      "publicoModalidad": "Ocupados, teleformación; visible también en programación",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCT117"
+      },
+      "observacionesPedagogicas": "Entrada breve para conceptos, aplicaciones y liderazgo inicial en proyectos de datos e IA."
+    },
+    {
+      "codigo": "IFCT0049",
+      "denominacion": "ChatGPT e inteligencia artificial",
+      "horas": 60,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 1",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCT0049"
+      },
+      "observacionesPedagogicas": "Útil para alfabetización en IA generativa, límites, avances y aplicaciones prácticas."
+    },
+    {
+      "codigo": "COMM0032",
+      "denominacion": "Revolución artificial: uso y aplicaciones de ChatGPT en el entorno digital",
+      "horas": 60,
+      "familiaArea": "Comercio y marketing",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 1",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOCOMM0032"
+      },
+      "observacionesPedagogicas": "Buen apoyo para introducción a ChatGPT, uso básico, ética y recursos adicionales."
+    },
+    {
+      "codigo": "IFCD0099",
+      "denominacion": "Inteligencia artificial generativa y mejora de la productividad",
+      "horas": 90,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 2",
+      "publicoModalidad": "Ocupados, teleformación",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCD0099"
+      },
+      "observacionesPedagogicas": "Encaja con productividad, IA generativa, visualización de datos y mejora de tareas cotidianas."
+    },
+    {
+      "codigo": "IFCT0073",
+      "denominacion": "Mejora tu productividad con inteligencia artificial",
+      "horas": 100,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 2",
+      "publicoModalidad": "Ocupados y desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCT0073"
+      },
+      "observacionesPedagogicas": "Aterriza texto, imagen, audio, vídeo, atención al cliente y análisis de sentimientos."
+    },
+    {
+      "codigo": "COMM04",
+      "denominacion": "Introducción a la inteligencia artificial aplicada al marketing",
+      "horas": 50,
+      "familiaArea": "Comercio y marketing",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Ocupados y desempleados; presencial y teleformación visibles",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOCOMM04"
+      },
+      "observacionesPedagogicas": "Puente sectorial hacia marketing, modelos predictivos no-code y agentes inteligentes."
+    },
+    {
+      "codigo": "COMM18",
+      "denominacion": "Inteligencia artificial aplicada a marketing digital",
+      "horas": 200,
+      "familiaArea": "Comercio y marketing",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FPCOMM18"
+      },
+      "observacionesPedagogicas": "Curso largo para martech, datos, e-commerce, automatización y business case."
+    },
+    {
+      "codigo": "COMM0042",
+      "denominacion": "Personalización de la experiencia del cliente con inteligencia artificial",
+      "horas": 60,
+      "familiaArea": "Comercio y marketing",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOCOMM0042"
+      },
+      "observacionesPedagogicas": "Adecuado para segmentación, UX, personalización y automatización de campañas."
+    },
+    {
+      "codigo": "COMM0033",
+      "denominacion": "Revolución artificial: herramientas de inteligencia artificial aplicadas al comercio tradicional",
+      "horas": 60,
+      "familiaArea": "Comercio y marketing",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOCOMM0033"
+      },
+      "observacionesPedagogicas": "Aplicación a pequeño comercio, recomendaciones, precios, inventario, marketing y chatbots."
+    },
+    {
+      "codigo": "FCOO0009",
+      "denominacion": "Aplicaciones basadas en inteligencia artificial de uso en orientación laboral",
+      "horas": 120,
+      "familiaArea": "Formación complementaria / orientación laboral",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FPFCOO0009"
+      },
+      "observacionesPedagogicas": "La ficha revisada no desglosa módulos; útil para empleabilidad y orientación con prudencia profesional."
+    },
+    {
+      "codigo": "IFCT0019",
+      "denominacion": "Inteligencia artificial aplicada a la empresa",
+      "horas": 280,
+      "familiaArea": "Informática y comunicaciones / empresa",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCT0019"
+      },
+      "observacionesPedagogicas": "Curso extenso para algoritmos, ML, deep learning, big data y herramientas como Weka u Orange."
+    },
+    {
+      "codigo": "IFCD104",
+      "denominacion": "Inteligencia artificial y big data aplicado al ámbito biosanitario",
+      "horas": 300,
+      "familiaArea": "Informática y comunicaciones / salud",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Ocupados, teleformación; desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FOIFCD104"
+      },
+      "observacionesPedagogicas": "Nivel técnico-sectorial: programación, modelos, Big Data, R, estadística y tecnologías hospitalarias."
+    },
+    {
+      "codigo": "IFCD107",
+      "denominacion": "Especialista en inteligencia artificial",
+      "horas": 230,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FPIFCD107"
+      },
+      "observacionesPedagogicas": "Conecta fundamentos, datasets, ML, redes neuronales, AutoML, Responsible AI y soft skills."
+    },
+    {
+      "codigo": "IFCT0067",
+      "denominacion": "Administrador especialista Microsoft 365 con inteligencia artificial",
+      "horas": 150,
+      "familiaArea": "Informática y comunicaciones / productividad empresarial",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FPIFCT0067"
+      },
+      "observacionesPedagogicas": "Especialización instrumental vinculada a MS-900, MD-102 y MS-102."
+    },
+    {
+      "codigo": "IFCT0070",
+      "denominacion": "Consultor especialista de Power Platform con inteligencia artificial",
+      "horas": 160,
+      "familiaArea": "Informática y comunicaciones / automatización",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 3",
+      "publicoModalidad": "Desempleados, presencial",
+      "fuente": {
+        "etiqueta": "SCE Buscur",
+        "url": "https://www3.gobiernodecanarias.org/empleo/buscur/detail/2-FPIFCT0070"
+      },
+      "observacionesPedagogicas": "Adecuado para automatización low-code y análisis con Power Platform."
+    },
+    {
+      "codigo": "IFCD112",
+      "denominacion": "Resolución de problemas multisectoriales: modelos de Machine Learning, Deep Learning y uso masivo de datos",
+      "horas": 100,
+      "familiaArea": "Informática y comunicaciones",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Especialidad estatal SEPE; no núcleo de la consulta SCE revisada",
+      "fuente": {
+        "etiqueta": "SEPE programa formativo",
+        "url": "https://www.sepe.es/dam/jcr%3A6f3852f6-8973-4f05-8b66-ea4e1ab4e6f7/IFCD112.pdf"
+      },
+      "observacionesPedagogicas": "Puente entre alfabetización IA y especialización técnica aplicada."
+    },
+    {
+      "codigo": "IFCD99",
+      "denominacion": "Programación en inteligencia artificial y Big Data aplicables en entornos 5G",
+      "horas": 150,
+      "familiaArea": "Informática y comunicaciones / 5G",
+      "tipoPieza": "especialidad formativa no formal",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Especialidad estatal SEPE; no núcleo de la consulta SCE revisada",
+      "fuente": {
+        "etiqueta": "SEPE programa formativo",
+        "url": "https://www.sepe.es/dam/jcr%3A09008d7a-0cfb-4429-a3cd-0e3018e36bb4/IFCD99.pdf"
+      },
+      "observacionesPedagogicas": "Itinerario técnico aplicado que conecta programación, BI, Big Data e IA."
+    },
+    {
+      "codigo": "IFC749_3",
+      "denominacion": "Gestión de datos y entrenamiento en sistemas de IA basados en aprendizaje automático",
+      "horas": 510,
+      "familiaArea": "Informática y comunicaciones / Inteligencia Artificial y Data",
+      "tipoPieza": "cualificación profesional",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Referente BOE, no curso no formal SCE",
+      "fuente": {
+        "etiqueta": "RD 46/2022, anexo IV",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-1058"
+      },
+      "observacionesPedagogicas": "Columna para datos, preprocesado, entrenamiento y validación."
+    },
+    {
+      "codigo": "IFC750_3",
+      "denominacion": "Gestión de la instalación, despliegue y explotación de sistemas de IA basados en aprendizaje automático",
+      "horas": 660,
+      "familiaArea": "Informática y comunicaciones / Inteligencia Artificial y Data",
+      "tipoPieza": "cualificación profesional",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Referente BOE, no curso no formal SCE",
+      "fuente": {
+        "etiqueta": "RD 46/2022, anexo V",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-1058"
+      },
+      "observacionesPedagogicas": "Columna para infraestructura, despliegue, explotación y operación de sistemas de IA."
+    },
+    {
+      "codigo": "ECP0966_3",
+      "denominacion": "Consultar y extraer información de distintas plataformas de almacenamiento de datos",
+      "horas": null,
+      "familiaArea": "Inteligencia Artificial y Data",
+      "tipoPieza": "estándar competencial / ECP",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Estándar de competencia profesional",
+      "fuente": {
+        "etiqueta": "RD 532/2025",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-13147"
+      },
+      "observacionesPedagogicas": "Permite traducir evidencias a microcompetencias sobre datos."
+    },
+    {
+      "codigo": "ECP2492_3-ECP2497_3",
+      "denominacion": "Estándares de competencia vinculados a IA y Data",
+      "horas": null,
+      "familiaArea": "Inteligencia Artificial y Data",
+      "tipoPieza": "estándar competencial / ECP",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Estándares de competencia profesional",
+      "fuente": {
+        "etiqueta": "RD 532/2025",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-13147"
+      },
+      "observacionesPedagogicas": "Base para microevidencias acumulables sobre entrenamiento, despliegue y explotación de IA."
+    },
+    {
+      "codigo": "RD 69/2025",
+      "denominacion": "Familia profesional Inteligencia Artificial y Data y grados A-E",
+      "horas": null,
+      "familiaArea": "Sistema de Formación Profesional",
+      "tipoPieza": "certificado de competencia",
+      "nivelEstimado": "Marco",
+      "publicoModalidad": "Marco normativo, no acción formativa concreta",
+      "fuente": {
+        "etiqueta": "RD 69/2025",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2039"
+      },
+      "observacionesPedagogicas": "El modelo de datos debe contemplar microacreditaciones, certificados de competencia, certificados profesionales y cursos de especialización."
+    },
+    {
+      "codigo": "Grado C",
+      "denominacion": "Certificado profesional específico de IA en oferta visible revisada",
+      "horas": null,
+      "familiaArea": "Inteligencia Artificial y Data",
+      "tipoPieza": "certificado profesional",
+      "nivelEstimado": "Pendiente de despliegue visible",
+      "publicoModalidad": "No localizado como oferta SCE visible en el corpus revisado",
+      "fuente": {
+        "etiqueta": "Documento maestro",
+        "url": "docs/memoria-maestra.md"
+      },
+      "observacionesPedagogicas": "Categoría reservada para evitar confundir especialidades SCE con certificados profesionales."
+    },
+    {
+      "codigo": "CE IA Big Data",
+      "denominacion": "Curso de especialización en Inteligencia Artificial y Big Data",
+      "horas": null,
+      "familiaArea": "FP formal / Informática y comunicaciones",
+      "tipoPieza": "curso de especialización formal",
+      "nivelEstimado": "Benchmark avanzado",
+      "publicoModalidad": "Grado E, FP formal",
+      "fuente": {
+        "etiqueta": "TodoFP / RD 279/2021",
+        "url": "https://www.todofp.es/que-estudiar/familias-profesionales/informatica-comunicaciones/ce-inteligencia-artificial-bigdata.html"
+      },
+      "observacionesPedagogicas": "Faro curricular avanzado, no sustituto de oferta no reglada del SCE."
+    },
+    {
+      "codigo": "RD 183/2026",
+      "denominacion": "Aprendizaje automático: gestión de datos y entrenamiento",
+      "horas": null,
+      "familiaArea": "FP formal / Inteligencia Artificial y Data",
+      "tipoPieza": "curso de especialización formal",
+      "nivelEstimado": "Benchmark avanzado",
+      "publicoModalidad": "Grado E, FP formal",
+      "fuente": {
+        "etiqueta": "BOE RD 183/2026",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-5869"
+      },
+      "observacionesPedagogicas": "Benchmark formal del eje datos y entrenamiento."
+    },
+    {
+      "codigo": "RD 184/2026",
+      "denominacion": "Aprendizaje automático: instalación, despliegue y explotación de sistemas",
+      "horas": null,
+      "familiaArea": "FP formal / Inteligencia Artificial y Data",
+      "tipoPieza": "curso de especialización formal",
+      "nivelEstimado": "Benchmark avanzado",
+      "publicoModalidad": "Grado E, FP formal",
+      "fuente": {
+        "etiqueta": "BOE RD 184/2026",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5870"
+      },
+      "observacionesPedagogicas": "Benchmark formal del eje MLOps, despliegue y explotación."
+    },
+    {
+      "codigo": "SEPE 2025 TIC",
+      "denominacion": "Cursos programáticos de IA, IA generativa, Python para IA, marketing digital con IA y RPA",
+      "horas": null,
+      "familiaArea": "Programación oficial coyuntural",
+      "tipoPieza": "curso programático oficial o coyuntural",
+      "nivelEstimado": "Variable",
+      "publicoModalidad": "Garantía Juvenil / difusión SEPE, según convocatoria",
+      "fuente": {
+        "etiqueta": "SEPE formación TIC 2025",
+        "url": "https://www.sepe.es/SiteSepe/contenidos/garantia_juvenil/documentos/2025/2025-2-FORMACION--TIC.pdf"
+      },
+      "observacionesPedagogicas": "Capa cambiante de cursos oficiales publicados; no debe mezclarse con CEF, ECP o BOE."
+    },
+    {
+      "codigo": "Benchmark avanzado",
+      "denominacion": "Infraestructura, cloud, edge, APIs, monitorización y operación de sistemas de IA",
+      "horas": null,
+      "familiaArea": "Diseño técnico avanzado",
+      "tipoPieza": "benchmark avanzado",
+      "nivelEstimado": "Nivel 4",
+      "publicoModalidad": "Referente curricular, no acción formativa concreta",
+      "fuente": {
+        "etiqueta": "Documento maestro",
+        "url": "docs/memoria-maestra.md"
+      },
+      "observacionesPedagogicas": "Nivel de llegada para perfiles técnicos; no base inicial del MVP."
+    }
+  ]
+}

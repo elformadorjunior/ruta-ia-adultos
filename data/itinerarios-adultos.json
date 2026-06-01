@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "niveles": [
+    {
+      "nivel": 0,
+      "titulo": "Nivel 0 — Confianza digital básica",
+      "objetivo": "Reducir barreras de acceso antes de usar IA.",
+      "paraQuien": "Personas que necesitan seguridad con navegador, archivos, plataformas y tareas digitales básicas.",
+      "competencias": ["navegación segura", "gestión de archivos", "uso básico de plataformas", "privacidad inicial"],
+      "referentes": ["requisitos de teleformación", "alfabetización digital transversal"],
+      "actividadSugerida": "Entrar en una plataforma de práctica, descargar una ficha y subir una respuesta sin datos personales.",
+      "evidenciaAprendizaje": "Captura o lista de pasos realizados, sin datos sensibles."
+    },
+    {
+      "nivel": 1,
+      "titulo": "Nivel 1 — Primer contacto con IA",
+      "objetivo": "Entender qué es la IA, qué límites tiene y cómo pedir ayuda sin delegar el criterio.",
+      "paraQuien": "Personas con uso digital básico que quieren empezar con IA generativa.",
+      "competencias": ["conceptos básicos de IA", "prompts seguros", "verificación", "uso ético"],
+      "referentes": ["IFCT117", "IFCT0049", "COMM0032"],
+      "actividadSugerida": "Redactar un prompt de estudio que pida explicación, preguntas y fuentes de contraste.",
+      "evidenciaAprendizaje": "Prompt seguro y explicación propia de lo aprendido."
+    },
+    {
+      "nivel": 2,
+      "titulo": "Nivel 2 — IA generativa para productividad y estudio",
+      "objetivo": "Usar IA para mejorar tareas cotidianas sin copiar ni introducir datos sensibles.",
+      "paraQuien": "Personas que buscan mejorar redacción, síntesis, organización, búsqueda guiada o materiales de apoyo.",
+      "competencias": ["productividad", "redacción asistida", "síntesis", "revisión crítica", "creación multimedia básica"],
+      "referentes": ["IFCD0099", "IFCT0073"],
+      "actividadSugerida": "Crear una guía de estudio o una lista de tareas con IA y revisarla con una fuente fiable.",
+      "evidenciaAprendizaje": "Borrador inicial, revisión humana y versión final explicada."
+    },
+    {
+      "nivel": 3,
+      "titulo": "Nivel 3 — IA aplicada a empleo, comercio, marketing u orientación",
+      "objetivo": "Aplicar IA a contextos profesionales concretos con prudencia y utilidad.",
+      "paraQuien": "Personas orientadas a empleabilidad, pequeño comercio, marketing, atención al cliente u orientación laboral.",
+      "competencias": ["casos sectoriales", "automatización básica", "atención al cliente", "orientación", "personalización responsable"],
+      "referentes": ["COMM04", "COMM18", "COMM0042", "COMM0033", "FCOO0009", "IFCT0067", "IFCT0070"],
+      "actividadSugerida": "Diseñar un caso ficticio de mejora profesional con IA y valorar riesgos de datos, sesgos y supervisión.",
+      "evidenciaAprendizaje": "Ficha de caso con objetivo, herramienta, datos ficticios, riesgos y revisión humana."
+    },
+    {
+      "nivel": 4,
+      "titulo": "Nivel 4 — Datos, modelos, machine learning y especialización técnica",
+      "objetivo": "Conectar el aprendizaje con datos, modelos, estándares competenciales y benchmarks formales.",
+      "paraQuien": "Perfiles con interés técnico en datasets, programación, ML, deep learning, AutoML, despliegue o explotación.",
+      "competencias": ["datos", "preprocesado", "modelos", "validación", "Responsible AI", "despliegue"],
+      "referentes": ["IFCD107", "IFCD112", "IFCD99", "IFCD104", "IFC749_3", "IFC750_3", "ECP2492_3-ECP2497_3"],
+      "actividadSugerida": "Mapear un caso técnico ficticio contra una competencia ECP y definir evidencias observables.",
+      "evidenciaAprendizaje": "Mapa competencia-evidencia con límites técnicos y éticos."
+    }
+  ]
+}
