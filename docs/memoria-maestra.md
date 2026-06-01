@@ -16,6 +16,12 @@ El MVP separa tres planos que no deben mezclarse:
 
 Esta separación evita presentar una especialidad formativa como si fuese un certificado profesional o una titulación formal.
 
+## Reposicionamiento del MVP 0.2
+
+La herramienta se orienta principalmente a docentes, formadores y orientadores. El alumnado adulto sigue siendo destinatario de actividades y módulos simplificados, pero no es el lector principal de la capa normativa.
+
+El valor diferencial del recurso no es ofrecer otro curso de IA, sino ayudar a convertir referentes oficiales y necesidades de empleabilidad en decisiones metodológicas: nivel, objetivo, actividad, evidencia, límites y revisión humana.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
@@ -26,6 +32,7 @@ La herramienta se implementa como web estática:
 - `data/catalogo-formaciones.json` para catálogo;
 - `data/mapa-competencias.json` para ejes competenciales;
 - `data/itinerarios-adultos.json` para ruta progresiva.
+- `data/fichas-metodologicas.json` para fichas docentes actualizables.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.
 

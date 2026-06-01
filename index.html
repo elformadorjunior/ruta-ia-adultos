@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruta IA para Adultos · El Formador Junior</title>
-  <meta name="description" content="MVP educativo personal para orientar a personas adultas en competencias básicas de inteligencia artificial, formación no reglada y empleabilidad.">
+  <title>Ruta IA para Adultos · Kit metodológico docente</title>
+  <meta name="description" content="Kit metodológico para que docentes y orientadores diseñen rutas de IA para personas adultas en formación no reglada, empleabilidad y alfabetización digital.">
   <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
@@ -14,8 +14,10 @@
       <a class="brand" href="#inicio">El Formador Junior</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menú</button>
       <div class="nav-menu" id="nav-menu">
+        <a href="#uso">Uso</a>
         <a href="#mapa">Mapa</a>
         <a href="#ruta">Ruta</a>
+        <a href="#fichas">Fichas</a>
         <a href="#diagnostico">Diagnóstico</a>
         <a href="#modulo">Módulo</a>
         <a href="#metodologia">Metodología</a>
@@ -26,31 +28,53 @@
   <main id="contenido">
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow">MVP 0.1 · Recurso educativo personal</p>
+        <p class="eyebrow">MVP 0.2 · Kit metodológico docente</p>
         <h1>Ruta IA para Adultos · El Formador Junior</h1>
-        <p class="lead">Comprende, ordena y practica competencias básicas relacionadas con inteligencia artificial en formación de adultos, empleabilidad y aprendizaje permanente.</p>
+        <p class="lead">Una herramienta para que docentes, formadores y orientadores diseñen rutas de IA para personas adultas, conectando actividades prácticas con referentes oficiales sin confundir especialidades, certificados o benchmarks.</p>
         <div class="notice">
           <strong>Aviso institucional.</strong>
           Este recurso es personal, pedagógico y de portfolio. No es un recurso oficial del SCE, SEPE, BOE, ICSE ni de ninguna entidad formativa, ni sustituye materiales, programaciones o evaluaciones oficiales.
         </div>
         <div class="hero-actions">
-          <a class="button primary" href="#diagnostico">Iniciar ruta</a>
-          <a class="button secondary" href="#mapa">Ver mapa formativo</a>
+          <a class="button primary" href="#uso">Ver para qué sirve</a>
+          <a class="button secondary" href="#fichas">Usar fichas docentes</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Privacidad básica">
-        <h2>Para quién sirve</h2>
-        <p>Personas adultas con distintos niveles digitales que quieren orientarse en IA, distinguir tipos de formación y empezar por una práctica segura.</p>
-        <h2>Privacidad</h2>
-        <p>El diagnóstico y las actividades funcionan en el navegador. No se piden datos personales sensibles ni se envían respuestas a servidores externos.</p>
+        <h2>Qué hace</h2>
+        <p>Ayuda a preparar sesiones, elegir itinerarios, justificar contenidos y convertir referentes oficiales en actividades comprensibles para adultos.</p>
+        <h2>Actualización del contexto</h2>
+        <p>Los datos viven en archivos JSON revisables. Cada ficha puede ampliarse, marcarse como pendiente de revisión y actualizarse sin rehacer la interfaz.</p>
       </aside>
+    </section>
+
+    <section class="section" id="uso">
+      <div class="section-heading">
+        <p class="eyebrow">Sentido de la herramienta</p>
+        <h2>Un puente entre normativa, aula y empleabilidad</h2>
+        <p>No pretende ser “otro curso de IA”. Su función es ayudar a transformar un mapa complejo de formación y competencias en decisiones docentes: qué explicar, en qué orden, con qué actividad y qué evidencia pedir.</p>
+      </div>
+      <div class="cards three">
+        <article class="card">
+          <h3>Para docentes</h3>
+          <p>Diseñar sesiones, seleccionar referentes, adaptar lenguaje, preparar actividades y documentar límites de uso de IA.</p>
+        </article>
+        <article class="card">
+          <h3>Para orientadores</h3>
+          <p>Ubicar perfiles adultos en una ruta inicial y conectar IA con empleo, productividad, comercio, marketing u orientación laboral.</p>
+        </article>
+        <article class="card">
+          <h3>Para alumnado</h3>
+          <p>Usar una vista simplificada: diagnóstico, módulo inicial, checklist de seguridad y actividades guiadas sin exceso de jerga normativa.</p>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="mapa">
       <div class="section-heading">
-        <p class="eyebrow">Mapa de formaciones y referentes</p>
-        <h2>Piezas separadas para no confundir certificados, especialidades y benchmarks</h2>
-        <p>Datos iniciales extraídos del documento maestro adjunto. La programación pública cambia, por lo que cada ficha debe revisarse antes de publicar una versión institucional o docente.</p>
+        <p class="eyebrow">Mapa actualizable</p>
+        <h2>Referentes separados para no confundir certificados, especialidades y benchmarks</h2>
+        <p>El mapa sirve al docente para justificar decisiones pedagógicas. La programación pública cambia; por eso cada ficha debe tener fecha de revisión, estado y fuente verificable.</p>
       </div>
       <div class="filters" aria-label="Filtros del catálogo">
         <button class="chip active" type="button" data-filter="todas">Todas</button>
@@ -89,11 +113,20 @@
       <div class="level-grid" id="itinerario-list"></div>
     </section>
 
+    <section class="section" id="fichas">
+      <div class="section-heading">
+        <p class="eyebrow">Fichas metodológicas</p>
+        <h2>De referente oficial a sesión de aula</h2>
+        <p>Estas fichas convierten la ruta en decisiones concretas: objetivo docente, actividad, evidencia, revisión humana y salida simplificada para el alumnado.</p>
+      </div>
+      <div class="method-grid" id="fichas-list"></div>
+    </section>
+
     <section class="section split" id="diagnostico">
       <div class="section-heading compact">
-        <p class="eyebrow">Diagnóstico local</p>
-        <h2>Orientación inicial sin recoger datos personales</h2>
-        <p>Marca la opción que mejor te representa. El resultado es orientativo y no oficial; se calcula solo en tu navegador.</p>
+        <p class="eyebrow">Vista alumnado</p>
+        <h2>Diagnóstico inicial sin recoger datos personales</h2>
+        <p>Puede usarse al inicio de una sesión para orientar el nivel de entrada. El resultado es formativo, no oficial, y se calcula solo en el navegador.</p>
       </div>
       <form class="quiz-card" id="profile-form">
         <div id="profile-questions"></div>
@@ -153,7 +186,7 @@
 
     <section class="section muted" id="metodologia">
       <div class="section-heading">
-        <p class="eyebrow">Metodología y límites</p>
+        <p class="eyebrow">Metodología, actualización y límites</p>
         <h2>Complementario, prudente y revisable</h2>
       </div>
       <div class="cards three">
@@ -168,6 +201,10 @@
         <article class="card">
           <h3>Fuentes y límites</h3>
           <p>El MVP usa el documento maestro como base, separa tipos de piezas y requiere revisión humana antes de publicación o uso en aula.</p>
+        </article>
+        <article class="card">
+          <h3>Contexto actualizable</h3>
+          <p>Las fichas pueden actualizarse por revisión humana: fecha, estado, fuente, observaciones y relación con competencias.</p>
         </article>
       </div>
     </section>
