@@ -27,25 +27,63 @@
 
   <main id="contenido">
     <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow">MVP 0.2 · Kit metodológico docente</p>
-        <h1>Ruta IA para Adultos · El Formador Junior</h1>
-        <p class="lead">Una herramienta para que docentes, formadores y orientadores diseñen rutas de IA para personas adultas, conectando actividades prácticas con referentes oficiales sin confundir especialidades, certificados o benchmarks.</p>
-        <div class="notice">
-          <strong>Aviso institucional.</strong>
-          Este recurso es personal, pedagógico y de portfolio. No es un recurso oficial del SCE, SEPE, BOE, ICSE ni de ninguna entidad formativa, ni sustituye materiales, programaciones o evaluaciones oficiales.
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">MVP 0.3 · Experiencia de uso en escritorio</p>
+          <h1>Ruta IA para Adultos</h1>
+          <p class="hero-kicker">Kit metodológico docente · El Formador Junior</p>
+          <p class="lead">Ayuda a docentes, formadores y orientadores a preparar sesiones de IA para personas adultas: elegir nivel, seleccionar referentes, proponer actividades y pedir evidencias sin confundir formación, certificados o benchmarks.</p>
+          <div class="notice">
+            <strong>Aviso institucional.</strong>
+            Recurso personal, pedagógico y de portfolio. No es oficial del SCE, SEPE, BOE, ICSE ni de ninguna entidad formativa.
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#uso">Ver para qué sirve</a>
+            <a class="button secondary" href="#recorrido">Seguir recorrido guiado</a>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a class="button primary" href="#uso">Ver para qué sirve</a>
-          <a class="button secondary" href="#fichas">Usar fichas docentes</a>
+        <div class="hero-panel" aria-label="Resumen de la herramienta">
+          <div>
+            <span class="panel-label">Qué hace</span>
+            <p>Convierte un mapa complejo de IA y competencias en decisiones docentes listas para aula.</p>
+          </div>
+          <div>
+            <span class="panel-label">Cómo se actualiza</span>
+            <p>Los datos viven en JSON revisables y cada ficha puede marcar fecha, estado y fuente.</p>
+          </div>
         </div>
       </div>
-      <aside class="hero-panel" aria-label="Privacidad básica">
-        <h2>Qué hace</h2>
-        <p>Ayuda a preparar sesiones, elegir itinerarios, justificar contenidos y convertir referentes oficiales en actividades comprensibles para adultos.</p>
-        <h2>Actualización del contexto</h2>
-        <p>Los datos viven en archivos JSON revisables. Cada ficha puede ampliarse, marcarse como pendiente de revisión y actualizarse sin rehacer la interfaz.</p>
-      </aside>
+    </section>
+
+    <section class="section guide" id="recorrido">
+      <div class="section-heading compact">
+        <p class="eyebrow">Recorrido recomendado</p>
+        <h2>De la duda inicial a una sesión usable</h2>
+        <p>El flujo principal está pensado para que un docente pueda entender la herramienta y llegar a una ficha aplicable sin recorrer toda la página.</p>
+      </div>
+      <div class="guide-grid">
+        <a class="guide-card" href="#uso">
+          <span>1</span>
+          <strong>Entender el uso</strong>
+          <small>Qué problema resuelve para docentes, orientación y alumnado.</small>
+        </a>
+        <a class="guide-card" href="#ruta">
+          <span>2</span>
+          <strong>Elegir nivel</strong>
+          <small>Ubicar el punto de partida antes de diseñar la actividad.</small>
+        </a>
+        <a class="guide-card" href="#fichas">
+          <span>3</span>
+          <strong>Usar una ficha</strong>
+          <small>Pasar de referente oficial a sesión, evidencia y límites.</small>
+        </a>
+        <a class="guide-card" href="#modulo">
+          <span>4</span>
+          <strong>Aplicar con alumnado</strong>
+          <small>Usar módulo, checklist y microevaluación sin enviar datos.</small>
+        </a>
+      </div>
     </section>
 
     <section class="section" id="uso">
@@ -54,7 +92,7 @@
         <h2>Un puente entre normativa, aula y empleabilidad</h2>
         <p>No pretende ser “otro curso de IA”. Su función es ayudar a transformar un mapa complejo de formación y competencias en decisiones docentes: qué explicar, en qué orden, con qué actividad y qué evidencia pedir.</p>
       </div>
-      <div class="cards three">
+      <div class="cards three cards-compact">
         <article class="card">
           <h3>Para docentes</h3>
           <p>Diseñar sesiones, seleccionar referentes, adaptar lenguaje, preparar actividades y documentar límites de uso de IA.</p>
@@ -84,6 +122,7 @@
         <button class="chip" type="button" data-filter="curso de especialización formal">Especialización formal</button>
         <button class="chip" type="button" data-filter="curso programático oficial o coyuntural">Programáticos</button>
       </div>
+      <p class="table-hint">Consejo de uso: filtra primero por tipo de pieza. La tabla se mantiene como mapa de consulta, no como recorrido principal.</p>
       <div class="table-wrap" tabindex="0" aria-label="Catálogo de formaciones">
         <table>
           <thead>
@@ -110,7 +149,7 @@
         <h2>Cinco niveles para entrar por el punto real de cada persona</h2>
         <p>La ruta parte del uso seguro y avanza hacia productividad, aplicación sectorial y bases técnicas de datos y modelos.</p>
       </div>
-      <div class="level-grid" id="itinerario-list"></div>
+      <div class="level-grid compact-list" id="itinerario-list"></div>
     </section>
 
     <section class="section" id="fichas">
@@ -119,7 +158,7 @@
         <h2>De referente oficial a sesión de aula</h2>
         <p>Estas fichas convierten la ruta en decisiones concretas: objetivo docente, actividad, evidencia, revisión humana y salida simplificada para el alumnado.</p>
       </div>
-      <div class="method-grid" id="fichas-list"></div>
+      <div class="method-grid compact-list" id="fichas-list"></div>
     </section>
 
     <section class="section split" id="diagnostico">
@@ -189,7 +228,7 @@
         <p class="eyebrow">Metodología, actualización y límites</p>
         <h2>Complementario, prudente y revisable</h2>
       </div>
-      <div class="cards three">
+      <div class="cards three cards-compact">
         <article class="card">
           <h3>Público adulto</h3>
           <p>Lenguaje claro, tono no infantilizado, bloques breves, ejemplos prácticos y actividades con evidencia de aprendizaje.</p>

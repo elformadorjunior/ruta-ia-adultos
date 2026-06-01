@@ -12,6 +12,7 @@
   --ok: #26734d;
   --warn: #8a4b11;
   --shadow: 0 18px 42px rgba(23, 32, 42, 0.1);
+  --page: min(1180px, calc(100% - 48px));
 }
 
 * {
@@ -20,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
 }
 
 body {
@@ -69,12 +71,13 @@ textarea {
   z-index: 5;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
 }
 
 .topbar {
-  width: min(1180px, 100%);
+  width: var(--page);
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 14px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,18 +121,35 @@ textarea {
 }
 
 .hero {
-  min-height: 86vh;
+  position: relative;
+  min-height: 640px;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  align-items: center;
+  overflow: hidden;
+  background: #edf4f3;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(246, 247, 248, 0.98) 0%, rgba(246, 247, 248, 0.88) 36%, rgba(246, 247, 248, 0.22) 68%),
+    url("../EFJ-002%20Estudiar%20con%20IA/assets/hero-estudiar-ia.png") center right / cover no-repeat;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: var(--page);
+  margin: 0 auto;
+  padding: 76px 0 44px;
+  display: grid;
+  grid-template-columns: minmax(440px, 0.78fr) minmax(280px, 0.38fr);
   gap: 28px;
   align-items: end;
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  padding: 86px 24px 52px;
 }
 
 .hero-copy,
-.hero-panel,
 .quiz-card,
 .lesson,
 .lesson-side,
@@ -141,12 +161,34 @@ textarea {
 }
 
 .hero-copy {
-  padding: clamp(28px, 5vw, 56px);
+  max-width: 760px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .hero-panel {
-  padding: 26px;
-  border-top: 6px solid var(--brand);
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(215, 222, 229, 0.9);
+  border-top: 5px solid var(--brand);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.hero-panel p {
+  margin: 4px 0 0;
+}
+
+.panel-label {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .eyebrow {
@@ -167,7 +209,8 @@ h3 {
 
 h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 6vw, 5rem);
+  max-width: 760px;
+  font-size: clamp(3rem, 5vw, 4.6rem);
 }
 
 h2 {
@@ -185,10 +228,17 @@ p {
 }
 
 .lead {
-  max-width: 780px;
+  max-width: 700px;
   margin-top: 20px;
   color: var(--muted);
   font-size: 1.2rem;
+}
+
+.hero-kicker {
+  margin: 10px 0 0;
+  color: var(--brand-dark);
+  font-size: 1.25rem;
+  font-weight: 800;
 }
 
 .notice {
@@ -197,6 +247,7 @@ p {
   background: #fff7e7;
   border: 1px solid #efcf95;
   border-radius: 8px;
+  max-width: 720px;
 }
 
 .hero-actions,
@@ -241,9 +292,10 @@ p {
 }
 
 .section {
-  width: min(1180px, 100%);
+  width: var(--page);
   margin: 0 auto;
-  padding: 72px 24px;
+  padding: 64px 0;
+  scroll-margin-top: 86px;
 }
 
 .section.muted {
@@ -252,14 +304,14 @@ p {
 }
 
 .section.muted > * {
-  width: min(1180px, 100%);
+  width: var(--page);
   margin-left: auto;
   margin-right: auto;
 }
 
 .section-heading {
   max-width: 860px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .section-heading.compact {
@@ -271,11 +323,75 @@ p {
   font-size: 1.05rem;
 }
 
+.guide {
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.guide-card {
+  min-height: 170px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 20px;
+  color: var(--ink);
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(23, 32, 42, 0.05);
+}
+
+.guide-card:hover,
+.guide-card:focus {
+  border-color: var(--brand);
+  outline: 3px solid rgba(242, 184, 75, 0.28);
+}
+
+.guide-card span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+}
+
+.guide-card strong {
+  font-size: 1.15rem;
+}
+
+.guide-card small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
+  box-shadow: 0 8px 22px rgba(23, 32, 42, 0.04);
+}
+
+.table-hint {
+  width: fit-content;
+  max-width: 760px;
+  margin: -8px 0 18px;
+  padding: 12px 14px;
+  color: var(--muted);
+  background: #eef6f5;
+  border: 1px solid #cfe2df;
+  border-radius: 8px;
 }
 
 table {
@@ -286,15 +402,18 @@ table {
 
 th,
 td {
-  padding: 13px;
+  padding: 12px;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--line);
 }
 
 th {
+  position: sticky;
+  top: 0;
   background: #edf1f4;
   font-size: 0.88rem;
+  z-index: 1;
 }
 
 td {
@@ -312,8 +431,9 @@ td {
 
 .level-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(190px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
 }
 
 .level {
@@ -321,6 +441,45 @@ td {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 20px;
+  min-height: 100%;
+}
+
+.guided-detail summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 26px;
+}
+
+.guided-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.guided-detail summary:focus {
+  outline: 3px solid rgba(242, 184, 75, 0.35);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.guided-detail summary::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.guided-detail[open] summary::after {
+  content: "−";
+}
+
+.level summary {
+  display: grid;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.12;
 }
 
 .level .number {
@@ -335,10 +494,14 @@ td {
   font-weight: 800;
 }
 
+.detail-body {
+  margin-top: 18px;
+}
+
 .split {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
-  gap: 28px;
+  grid-template-columns: minmax(280px, 0.55fr) minmax(0, 1fr);
+  gap: 36px;
   align-items: start;
 }
 
@@ -347,19 +510,22 @@ td {
 }
 
 .question {
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 18px;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
 }
 
 .question legend {
   font-weight: 800;
-  margin-bottom: 10px;
+  padding: 0 6px;
 }
 
 .question label,
 .lesson-side label {
   display: block;
-  padding: 8px 0;
+  padding: 9px 0;
 }
 
 input[type="radio"],
@@ -391,14 +557,19 @@ input[type="checkbox"] {
 
 .module-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
+  gap: 28px;
   align-items: start;
 }
 
 .lesson,
 .lesson-side {
-  padding: 24px;
+  padding: 26px;
+}
+
+.lesson-side {
+  position: sticky;
+  top: 92px;
 }
 
 .activity-box {
@@ -428,10 +599,15 @@ input[type="checkbox"] {
   padding: 22px;
 }
 
+.cards-compact .card {
+  min-height: 180px;
+}
+
 .method-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
 }
 
 .method-card {
@@ -440,6 +616,14 @@ input[type="checkbox"] {
   border-radius: 8px;
   padding: 22px;
   box-shadow: 0 8px 22px rgba(23, 32, 42, 0.06);
+  min-height: 100%;
+}
+
+.method-card summary {
+  margin-bottom: 14px;
+  font-size: 1.16rem;
+  font-weight: 800;
+  line-height: 1.12;
 }
 
 .method-card__meta {
@@ -475,15 +659,35 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 980px) {
-  .hero,
+  .hero-inner,
   .split,
   .module-layout,
-  .cards.three {
+  .cards.three,
+  .guide-grid,
+  .method-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-media {
+    background:
+      linear-gradient(90deg, rgba(246, 247, 248, 0.98), rgba(246, 247, 248, 0.84)),
+      url("../EFJ-002%20Estudiar%20con%20IA/assets/hero-estudiar-ia.png") center right / cover no-repeat;
+  }
+
+  .hero-inner {
+    padding: 56px 0 40px;
   }
 
   .level-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lesson-side {
+    position: static;
   }
 }
 
@@ -514,8 +718,7 @@ input[type="checkbox"] {
 
   .hero,
   .section {
-    padding-left: 18px;
-    padding-right: 18px;
+    width: calc(100% - 36px);
   }
 
   .level-grid {
@@ -523,7 +726,12 @@ input[type="checkbox"] {
   }
 
   .hero {
-    padding-top: 48px;
+    width: 100%;
+  }
+
+  .hero-inner {
+    width: calc(100% - 36px);
+    padding-top: 44px;
   }
 
   h1 {
@@ -535,7 +743,6 @@ input[type="checkbox"] {
   }
 
   .hero-copy,
-  .hero-panel,
   .quiz-card,
   .lesson,
   .lesson-side,

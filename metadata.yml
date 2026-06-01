@@ -1,5 +1,5 @@
 title: "Ruta IA para Adultos · El Formador Junior"
-version: "0.2.0"
+version: "0.3.0"
 status: "mvp"
 date: "2026-05-31"
 language: "es"
@@ -29,3 +29,6 @@ context_update:
 deployment:
   target: "GitHub Pages"
   build_required: false
+ux:
+  desktop_review: "Portada visual con recorrido guiado, tabla más compacta y bloques desplegables preparados para móvil."
+  hero_asset: "EFJ-002 Estudiar con IA/assets/hero-estudiar-ia.png"
