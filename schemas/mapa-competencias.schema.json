@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/mapa-competencias.schema.json",
+  "title": "Mapa de competencias",
+  "type": "object",
+  "required": ["version", "ejesTransversales", "capas", "taxonomia"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string" },
+    "ejesTransversales": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "capas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "nombre", "referentes", "competencias"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "nombre": { "type": "string", "minLength": 1 },
+          "referentes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "competencias": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "taxonomia": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  }
+}
