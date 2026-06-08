@@ -1,7 +1,7 @@
 title: "Ruta IA para Adultos · El Formador Junior"
-version: "0.3.0"
+version: "0.4.0"
 status: "mvp"
-date: "2026-05-31"
+date: "2026-06-08"
 language: "es"
 type: "kit metodológico docente"
 audience:
@@ -20,15 +20,18 @@ privacy:
 source_document: "Documento maestro de formación no reglada en inteligencia artificial para el Servicio Canario de Emp.pdf"
 context_update:
   mode: "human_review"
-  last_review: "2026-06-01"
+  last_review: "2026-06-08"
+  sources_file: "data/sources.yml"
+  validation_script: "scripts/validate-data.mjs"
   data_files:
     - "data/catalogo-formaciones.json"
     - "data/mapa-competencias.json"
     - "data/itinerarios-adultos.json"
     - "data/fichas-metodologicas.json"
+    - "data/sources.yml"
 deployment:
   target: "GitHub Pages"
   build_required: false
 ux:
   desktop_review: "Portada visual con recorrido guiado, tabla más compacta y bloques desplegables preparados para móvil."
-  hero_asset: "EFJ-002 Estudiar con IA/assets/hero-estudiar-ia.png"
+  hero_asset: "assets/hero-estudiar-ia.png"

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/itinerarios-adultos.schema.json",
+  "title": "Itinerarios para personas adultas",
+  "type": "object",
+  "required": ["version", "niveles"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string" },
+    "niveles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nivel", "titulo", "objetivo", "paraQuien", "competencias", "referentes", "actividadSugerida", "evidenciaAprendizaje"],
+        "additionalProperties": false,
+        "properties": {
+          "nivel": { "type": "integer", "minimum": 0 },
+          "titulo": { "type": "string", "minLength": 1 },
+          "objetivo": { "type": "string", "minLength": 1 },
+          "paraQuien": { "type": "string", "minLength": 1 },
+          "competencias": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "referentes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "actividadSugerida": { "type": "string", "minLength": 1 },
+          "evidenciaAprendizaje": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

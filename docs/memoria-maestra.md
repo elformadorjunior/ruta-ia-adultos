@@ -2,7 +2,7 @@
 
 ## Alcance
 
-Esta memoria resume las decisiones de arquitectura pedagógica y técnica del MVP 0.1 de **Ruta IA para Adultos · El Formador Junior**.
+Esta memoria resume las decisiones de arquitectura pedagógica y técnica de **Ruta IA para Adultos · El Formador Junior**.
 
 El punto de partida es el documento maestro adjunto: `Documento maestro de formación no reglada en inteligencia artificial para el Servicio Canario de Emp.pdf`.
 
@@ -22,6 +22,16 @@ La herramienta se orienta principalmente a docentes, formadores y orientadores. 
 
 El valor diferencial del recurso no es ofrecer otro curso de IA, sino ayudar a convertir referentes oficiales y necesidades de empleabilidad en decisiones metodológicas: nivel, objetivo, actividad, evidencia, límites y revisión humana.
 
+## Consolidación del MVP 0.4
+
+El MVP 0.4 incorpora una base de trazabilidad y validación sin cambiar la arquitectura estática del recurso.
+
+Las fuentes pasan a documentarse en `data/sources.yml`, con entidad, tipo, URL, fecha de revisión, frecuencia recomendada, estado y archivos donde se usan. Esta estructura no acredita vigencia; sirve para organizar la revisión humana.
+
+Los esquemas de `schemas/` y el script `scripts/validate-data.mjs` preparan una validación mínima de estructura, referentes, fechas y URLs sin introducir dependencias externas ni automatización de publicación.
+
+La regla pedagógica se mantiene: la automatización puede ayudar a detectar cambios, preparar informes o abrir propuestas, pero la publicación de datos formativos y referencias oficiales requiere revisión humana.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
@@ -31,8 +41,10 @@ La herramienta se implementa como web estática:
 - `src/app.js` para diagnóstico, filtros, checklist y microevaluación;
 - `data/catalogo-formaciones.json` para catálogo;
 - `data/mapa-competencias.json` para ejes competenciales;
-- `data/itinerarios-adultos.json` para ruta progresiva.
-- `data/fichas-metodologicas.json` para fichas docentes actualizables.
+- `data/itinerarios-adultos.json` para ruta progresiva;
+- `data/fichas-metodologicas.json` para fichas docentes actualizables;
+- `data/sources.yml` para trazabilidad de fuentes y revisión humana;
+- `schemas/` y `scripts/validate-data.mjs` para validación local de estructura y coherencia mínima.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.
 

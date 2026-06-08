@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0 - 2026-06-08
+
+- Añadido `data/sources.yml` para centralizar fuentes, estado de revisión y relación con los datos.
+- Añadidos esquemas JSON en `schemas/` para documentar la estructura esperada de los datos.
+- Añadido `scripts/validate-data.mjs` para validación local sin dependencias externas.
+- Documentado el flujo de actualización humana en `docs/actualizacion-contexto.md`.
+- Documentada la evolución prudente hacia automatización revisable en `docs/futura-automatizacion.md`.
+- Documentada la decisión pendiente de licencia en `docs/licencia-pendiente.md`.
+- Estabilizado el recurso visual principal en `assets/hero-estudiar-ia.png`.
+- Actualizados README, metadata y aviso de versión del proyecto.
+
 ## 0.3.0 - 2026-06-01
 
 - Ajustada la experiencia de usuario de escritorio con una portada más compacta y visual.

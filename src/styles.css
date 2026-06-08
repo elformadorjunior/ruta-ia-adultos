@@ -134,7 +134,7 @@ textarea {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(246, 247, 248, 0.98) 0%, rgba(246, 247, 248, 0.88) 36%, rgba(246, 247, 248, 0.22) 68%),
-    url("../EFJ-002%20Estudiar%20con%20IA/assets/hero-estudiar-ia.png") center right / cover no-repeat;
+    url("../assets/hero-estudiar-ia.png") center right / cover no-repeat;
 }
 
 .hero-inner {
@@ -675,7 +675,7 @@ input[type="checkbox"] {
   .hero-media {
     background:
       linear-gradient(90deg, rgba(246, 247, 248, 0.98), rgba(246, 247, 248, 0.84)),
-      url("../EFJ-002%20Estudiar%20con%20IA/assets/hero-estudiar-ia.png") center right / cover no-repeat;
+      url("../assets/hero-estudiar-ia.png") center right / cover no-repeat;
   }
 
   .hero-inner {
