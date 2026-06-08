@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0 - 2026-06-08
+
+- Añadida sección `Aula` con hoja imprimible para preparar sesiones.
+- Añadido botón de impresión y estilos `@media print` para uso docente en papel.
+- Añadidas dos fichas metodológicas nuevas sobre comercio/marketing responsable y verificación de fuentes/sesgos.
+- Mejorado el comportamiento del menú móvil al navegar entre secciones.
+- Preparada la impresión para abrir detalles de ruta y fichas antes de generar la salida.
+- Documentada la revisión de aula, móvil e imprimible en `docs/mvp-05-aula-accesibilidad.md`.
+- Actualizados README, metadata y memoria maestra a MVP 0.5.
+
 ## 0.4.0 - 2026-06-08
 
 - Añadido `data/sources.yml` para centralizar fuentes, estado de revisión y relación con los datos.

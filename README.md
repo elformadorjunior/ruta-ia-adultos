@@ -8,7 +8,7 @@ Este proyecto es personal y de portfolio técnico-docente. No es un recurso ofic
 
 ## Estado
 
-MVP 0.4.0: base validable y preparada para actualización periódica revisable.
+MVP 0.5.0: calidad pedagógica de aula, versión imprimible y mejora móvil básica sobre la base validable del MVP 0.4.
 
 La web sigue siendo estática, compatible con GitHub Pages y sin backend, login, analítica, cookies innecesarias ni recogida de datos personales.
 
@@ -32,6 +32,7 @@ La web sigue siendo estática, compatible con GitHub Pages y sin backend, login,
 - `scripts/validate-data.mjs`: validación local sin dependencias externas.
 - `docs/actualizacion-contexto.md`: flujo de actualización humana.
 - `docs/futura-automatizacion.md`: fases prudentes para automatización futura.
+- `docs/mvp-05-aula-accesibilidad.md`: revisión de aula, móvil, impresión y accesibilidad básica.
 
 ## Cómo ejecutarlo
 
@@ -60,6 +61,12 @@ node scripts/validate-data.mjs
 El script comprueba que los JSON se pueden parsear, que existen campos mínimos, que no hay códigos repetidos, que las fichas tienen `ultimaRevision`, que no hay URLs vacías y que los referentes usados en fichas, itinerarios y mapa existen en el catálogo o están documentados como marcos transversales.
 
 Los esquemas de `schemas/` dejan preparado el contrato de datos para validación JSON Schema futura.
+
+## Versión imprimible
+
+La sección `Aula` incluye una hoja breve de preparación de sesión. Puede imprimirse desde el botón de la interfaz o con la opción de impresión del navegador.
+
+La impresión no envía datos fuera del dispositivo y abre los bloques desplegables para que ruta y fichas queden visibles en papel.
 
 ## Privacidad
 
@@ -101,6 +108,5 @@ La decisión final debe confirmarla Joel antes de crear licencias definitivas.
 
 ## Próximos pasos
 
-- MVP 0.5: versión imprimible, mejora móvil, capturas reales, accesibilidad y más fichas metodológicas.
-- MVP 0.6: validación semiautomática manual, informe de fuentes pendientes y detección de enlaces rotos.
+- MVP 0.6: validación semiautomática manual, informe de fuentes pendientes, detección de enlaces rotos y capturas reales sistemáticas.
 - MVP 0.7: revisión periódica asistida que genere issue o PR, sin publicar automáticamente.

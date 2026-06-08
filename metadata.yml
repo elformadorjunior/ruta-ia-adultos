@@ -1,5 +1,5 @@
 title: "Ruta IA para Adultos · El Formador Junior"
-version: "0.4.0"
+version: "0.5.0"
 status: "mvp"
 date: "2026-06-08"
 language: "es"
@@ -34,4 +34,5 @@ deployment:
   build_required: false
 ux:
   desktop_review: "Portada visual con recorrido guiado, tabla más compacta y bloques desplegables preparados para móvil."
+  classroom_review: "MVP 0.5 incorpora hoja imprimible, botón de impresión, mejora de menú móvil y nuevas fichas metodológicas."
   hero_asset: "assets/hero-estudiar-ia.png"

@@ -279,10 +279,34 @@ function bindNav() {
     const open = menu.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(open));
   });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+function bindPrintTools() {
+  const openDetails = () => {
+    document.querySelectorAll(".guided-detail").forEach((detail) => {
+      detail.open = true;
+    });
+  };
+
+  window.addEventListener("beforeprint", openDetails);
+  document.querySelectorAll("[data-print-page]").forEach((button) => {
+    button.addEventListener("click", () => {
+      openDetails();
+      window.print();
+    });
+  });
 }
 
 async function init() {
   bindNav();
+  bindPrintTools();
   renderProfileQuestions();
   bindProfileForm();
   renderMicroQuestions();
