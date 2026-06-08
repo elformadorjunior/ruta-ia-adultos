@@ -32,19 +32,26 @@ Los esquemas de `schemas/` y el script `scripts/validate-data.mjs` preparan una 
 
 La regla pedagógica se mantiene: la automatización puede ayudar a detectar cambios, preparar informes o abrir propuestas, pero la publicación de datos formativos y referencias oficiales requiere revisión humana.
 
+## Mejora de aula del MVP 0.5
+
+El MVP 0.5 se centra en calidad pedagógica aplicada. Añade una sección de preparación de aula con hoja imprimible, mejora el comportamiento móvil del menú y amplía las fichas metodológicas con casos de comercio/marketing responsable y verificación de fuentes.
+
+La impresión se resuelve con el navegador y estilos CSS, sin exportadores externos ni recogida de datos. Antes de imprimir se abren los bloques desplegables para que la ruta y las fichas sean visibles en papel.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
 
 - `index.html` para la interfaz;
 - `src/styles.css` para diseño responsive;
-- `src/app.js` para diagnóstico, filtros, checklist y microevaluación;
+- `src/app.js` para diagnóstico, filtros, checklist, microevaluación e impresión;
 - `data/catalogo-formaciones.json` para catálogo;
 - `data/mapa-competencias.json` para ejes competenciales;
 - `data/itinerarios-adultos.json` para ruta progresiva;
 - `data/fichas-metodologicas.json` para fichas docentes actualizables;
 - `data/sources.yml` para trazabilidad de fuentes y revisión humana;
-- `schemas/` y `scripts/validate-data.mjs` para validación local de estructura y coherencia mínima.
+- `schemas/` y `scripts/validate-data.mjs` para validación local de estructura y coherencia mínima;
+- sección `Aula` y reglas `@media print` para uso imprimible en clase.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.
 

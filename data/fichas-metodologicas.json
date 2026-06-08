@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "ultimaRevisionGlobal": "2026-06-01",
+  "version": "0.5.0",
+  "ultimaRevisionGlobal": "2026-06-08",
   "criterioActualizacion": "Revision humana de fuentes oficiales, fichas SCE/SEPE/BOE y necesidades reales de aula.",
   "fichas": [
     {
@@ -50,6 +50,30 @@
       "actividad": "Mapear un caso tecnico ficticio contra datos necesarios, riesgos de sesgo, validacion y evidencia competencial.",
       "evidencia": "Mapa problema-datos-modelo-validacion con una advertencia de Responsible AI.",
       "salidaAlumno": "Distingue uso instrumental de IA de itinerarios tecnicos hacia datos, modelos y especializacion."
+    },
+    {
+      "id": "sesion-comercio-marketing-responsable",
+      "titulo": "Sesion 5: IA para comercio y marketing responsable",
+      "nivel": "Nivel 3",
+      "estado": "borrador de aula",
+      "ultimaRevision": "2026-06-08",
+      "referentes": ["COMM04", "COMM18", "COMM0042", "COMM0033"],
+      "usoDocente": "Trabajar usos de IA en comercio, marketing y experiencia de cliente sin usar datos reales de clientes ni prometer resultados automaticos.",
+      "actividad": "Diseñar una mejora ficticia para un pequeno comercio: mensaje, segmentacion responsable, riesgo y revision humana antes de publicar.",
+      "evidencia": "Ficha de campaña ficticia con objetivo, publico simulado, mensaje revisado, limites de datos y criterio de aprobacion.",
+      "salidaAlumno": "Comprende que la IA puede proponer borradores comerciales, pero las decisiones sobre datos, tono y publicacion requieren supervision."
+    },
+    {
+      "id": "sesion-verificacion-fuentes-sesgos",
+      "titulo": "Sesion 6: Verificacion, fuentes y sesgos",
+      "nivel": "Nivel 2",
+      "estado": "lista para prueba piloto",
+      "ultimaRevision": "2026-06-08",
+      "referentes": ["IFCT117", "IFCT0049", "IFCD0099"],
+      "usoDocente": "Entrenar la revision critica de respuestas generadas por IA antes de usarlas en estudio, empleo o materiales de aula.",
+      "actividad": "Comparar una respuesta de IA con apuntes o una fuente fiable y marcar aciertos, dudas, sesgos posibles y cambios necesarios.",
+      "evidencia": "Tabla de verificacion con afirmacion, fuente de contraste, decision y version corregida por el alumno.",
+      "salidaAlumno": "Aprende a tratar la IA como apoyo revisable, no como fuente oficial ni verdad automatica."
     }
   ]
 }
