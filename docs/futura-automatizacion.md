@@ -1,12 +1,12 @@
 # Futura automatizacion
 
-MVP 0.4 no activa automatizacion periodica. Deja la base preparada para crecer de forma prudente.
+MVP 0.6 activa una validacion manual bajo demanda. No activa automatizacion periodica ni publicacion automatica.
 
 ## Evolucion por fases
 
 1. **Validacion local.** Mantener `scripts/validate-data.mjs` como comprobacion ligera sin dependencias externas.
 2. **Validacion manual antes de publicar.** Revisar datos, fuentes, README, metadata y changelog antes de cualquier despliegue.
-3. **GitHub Action manual.** En MVP 0.6 podria crearse un workflow con `workflow_dispatch` para ejecutar el validador bajo demanda.
+3. **GitHub Action manual.** En MVP 0.6 existe un workflow con `workflow_dispatch` para ejecutar el validador y generar un informe de fuentes.
 4. **Action programada sin publicacion directa.** En una fase posterior, una tarea mensual o trimestral podria generar un informe, issue o PR.
 5. **Revision humana.** Joel o la persona responsable revisa cambios, fuentes y lenguaje institucional.
 6. **Publicacion.** Solo se publica despues de aprobar la revision.
@@ -21,7 +21,7 @@ MVP 0.4 no activa automatizacion periodica. Deja la base preparada para crecer d
 
 ## Borrador orientativo
 
-Un workflow manual futuro podria limitarse a:
+El workflow manual actual se limita a:
 
 ```yaml
 name: Validar datos
@@ -38,6 +38,7 @@ jobs:
         with:
           node-version: "22"
       - run: node scripts/validate-data.mjs
+      - run: node scripts/report-sources.mjs
 ```
 
-Este borrador no se activa en MVP 0.4 para mantener el repositorio simple.
+Este workflow no hace commits, no modifica `main`, no publica datos oficiales y no sustituye la revision humana.

@@ -1,0 +1,29 @@
+name: Validacion manual de datos
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validar datos
+        run: node scripts/validate-data.mjs
+
+      - name: Generar informe de fuentes
+        run: node scripts/report-sources.mjs
+
+      - name: Recordatorio de revision humana
+        run: |
+          echo "Esta accion no publica, no hace commits y no valida vigencia oficial."
+          echo "Los datos formativos y referencias oficiales requieren revision humana antes de publicarse."

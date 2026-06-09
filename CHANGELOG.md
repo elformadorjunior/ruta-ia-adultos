@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 - 2026-06-09
+
+- Añadido workflow manual `manual-validation.yml` para ejecutar validación de datos bajo demanda.
+- Añadido `scripts/report-sources.mjs` para generar un informe local de fuentes pendientes de revisión.
+- Añadido `scripts/check-links.mjs` como comprobación opcional de enlaces, sin modificar archivos.
+- Actualizada la documentación de automatización para reflejar MVP 0.6.
+- Actualizados README y metadata con el flujo de validación semiautomática manual.
+
 ## 0.5.0 - 2026-06-08
 
 - Añadida sección `Aula` con hoja imprimible para preparar sesiones.
