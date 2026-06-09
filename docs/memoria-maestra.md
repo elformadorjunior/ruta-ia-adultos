@@ -38,6 +38,12 @@ El MVP 0.5 se centra en calidad pedagógica aplicada. Añade una sección de pre
 
 La impresión se resuelve con el navegador y estilos CSS, sin exportadores externos ni recogida de datos. Antes de imprimir se abren los bloques desplegables para que la ruta y las fichas sean visibles en papel.
 
+## Validación manual del MVP 0.6
+
+El MVP 0.6 añade validación semiautomática manual. El workflow de GitHub Actions solo se ejecuta bajo demanda, con permisos de lectura, y no publica, no crea commits ni modifica `main`.
+
+El informe de fuentes y la comprobación opcional de enlaces son apoyos para revisión humana. Los avisos no deben interpretarse como cambios automáticos ni como prueba definitiva de vigencia oficial.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
@@ -51,6 +57,7 @@ La herramienta se implementa como web estática:
 - `data/fichas-metodologicas.json` para fichas docentes actualizables;
 - `data/sources.yml` para trazabilidad de fuentes y revisión humana;
 - `schemas/` y `scripts/validate-data.mjs` para validación local de estructura y coherencia mínima;
+- `.github/workflows/manual-validation.yml`, `scripts/report-sources.mjs` y `scripts/check-links.mjs` para validación semiautomática manual;
 - sección `Aula` y reglas `@media print` para uso imprimible en clase.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.

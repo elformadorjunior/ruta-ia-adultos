@@ -8,7 +8,7 @@ Este proyecto es personal y de portfolio técnico-docente. No es un recurso ofic
 
 ## Estado
 
-MVP 0.5.0: calidad pedagógica de aula, versión imprimible y mejora móvil básica sobre la base validable del MVP 0.4.
+MVP 0.6.0: validación semiautomática manual, informe de fuentes pendientes y comprobación opcional de enlaces sobre la base de aula e imprimible del MVP 0.5.
 
 La web sigue siendo estática, compatible con GitHub Pages y sin backend, login, analítica, cookies innecesarias ni recogida de datos personales.
 
@@ -30,9 +30,13 @@ La web sigue siendo estática, compatible con GitHub Pages y sin backend, login,
 - `data/sources.yml`: inventario de fuentes y estado de revisión.
 - `schemas/`: esquemas de estructura para los JSON.
 - `scripts/validate-data.mjs`: validación local sin dependencias externas.
+- `scripts/report-sources.mjs`: informe local de fuentes pendientes de revisión humana.
+- `scripts/check-links.mjs`: comprobación opcional de enlaces web.
+- `.github/workflows/manual-validation.yml`: acción manual de validación sin publicación automática.
 - `docs/actualizacion-contexto.md`: flujo de actualización humana.
 - `docs/futura-automatizacion.md`: fases prudentes para automatización futura.
 - `docs/mvp-05-aula-accesibilidad.md`: revisión de aula, móvil, impresión y accesibilidad básica.
+- `docs/mvp-06-validacion-manual.md`: validación semiautomática manual e informe de fuentes.
 
 ## Cómo ejecutarlo
 
@@ -61,6 +65,26 @@ node scripts/validate-data.mjs
 El script comprueba que los JSON se pueden parsear, que existen campos mínimos, que no hay códigos repetidos, que las fichas tienen `ultimaRevision`, que no hay URLs vacías y que los referentes usados en fichas, itinerarios y mapa existen en el catálogo o están documentados como marcos transversales.
 
 Los esquemas de `schemas/` dejan preparado el contrato de datos para validación JSON Schema futura.
+
+## Cómo revisar fuentes
+
+Para generar un informe local:
+
+```powershell
+node scripts/report-sources.mjs
+```
+
+Para una comprobación opcional de enlaces web:
+
+```powershell
+node scripts/check-links.mjs
+```
+
+La comprobación de enlaces puede fallar aunque una página exista, porque algunos servidores bloquean peticiones automáticas o métodos `HEAD`. Cualquier aviso debe revisarse manualmente.
+
+Si aparece `EACCES`, normalmente significa que el entorno local no permite salida a red para ese script.
+
+El workflow de GitHub Actions es manual (`workflow_dispatch`). No hace commits, no modifica `main` y no publica datos.
 
 ## Versión imprimible
 
@@ -108,5 +132,4 @@ La decisión final debe confirmarla Joel antes de crear licencias definitivas.
 
 ## Próximos pasos
 
-- MVP 0.6: validación semiautomática manual, informe de fuentes pendientes, detección de enlaces rotos y capturas reales sistemáticas.
 - MVP 0.7: revisión periódica asistida que genere issue o PR, sin publicar automáticamente.
