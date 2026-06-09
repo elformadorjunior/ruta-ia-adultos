@@ -44,6 +44,12 @@ El MVP 0.6 añade validación semiautomática manual. El workflow de GitHub Acti
 
 El informe de fuentes y la comprobación opcional de enlaces son apoyos para revisión humana. Los avisos no deben interpretarse como cambios automáticos ni como prueba definitiva de vigencia oficial.
 
+## Revisión periódica asistida del MVP 0.7
+
+El MVP 0.7 añade una acción programada mensual y ejecutable manualmente. Su salida es un artifact con informe de revisión, no un cambio en el repositorio.
+
+La revisión periódica asistida puede señalar fuentes pendientes, estructura de catálogo, estado de fichas y avisos de enlaces, pero no abre publicación automática ni reemplaza la decisión humana.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
@@ -58,6 +64,7 @@ La herramienta se implementa como web estática:
 - `data/sources.yml` para trazabilidad de fuentes y revisión humana;
 - `schemas/` y `scripts/validate-data.mjs` para validación local de estructura y coherencia mínima;
 - `.github/workflows/manual-validation.yml`, `scripts/report-sources.mjs` y `scripts/check-links.mjs` para validación semiautomática manual;
+- `.github/workflows/periodic-review.yml` y `scripts/build-review-report.mjs` para revisión periódica asistida con informes como artifact;
 - sección `Aula` y reglas `@media print` para uso imprimible en clase.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.
