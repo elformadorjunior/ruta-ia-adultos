@@ -8,7 +8,7 @@ Este proyecto es personal y de portfolio técnico-docente. No es un recurso ofic
 
 ## Estado
 
-MVP 0.6.0: validación semiautomática manual, informe de fuentes pendientes y comprobación opcional de enlaces sobre la base de aula e imprimible del MVP 0.5.
+MVP 0.7.0: revisión periódica asistida que genera informes revisables sin publicar automáticamente.
 
 La web sigue siendo estática, compatible con GitHub Pages y sin backend, login, analítica, cookies innecesarias ni recogida de datos personales.
 
@@ -31,8 +31,10 @@ La web sigue siendo estática, compatible con GitHub Pages y sin backend, login,
 - `schemas/`: esquemas de estructura para los JSON.
 - `scripts/validate-data.mjs`: validación local sin dependencias externas.
 - `scripts/report-sources.mjs`: informe local de fuentes pendientes de revisión humana.
+- `scripts/build-review-report.mjs`: informe consolidado para revisión periódica asistida.
 - `scripts/check-links.mjs`: comprobación opcional de enlaces web.
 - `.github/workflows/manual-validation.yml`: acción manual de validación sin publicación automática.
+- `.github/workflows/periodic-review.yml`: revisión periódica asistida con artifact de informe.
 - `docs/actualizacion-contexto.md`: flujo de actualización humana.
 - `docs/futura-automatizacion.md`: fases prudentes para automatización futura.
 - `docs/mvp-05-aula-accesibilidad.md`: revisión de aula, móvil, impresión y accesibilidad básica.
@@ -86,6 +88,16 @@ Si aparece `EACCES`, normalmente significa que el entorno local no permite salid
 
 El workflow de GitHub Actions es manual (`workflow_dispatch`). No hace commits, no modifica `main` y no publica datos.
 
+## Revisión periódica asistida
+
+MVP 0.7 añade un workflow programado mensual y ejecutable manualmente:
+
+```text
+Actions > Revision periodica asistida > Run workflow
+```
+
+El workflow valida datos, genera un informe consolidado, ejecuta la comprobación opcional de enlaces y sube los resultados como artifact. No hace commits, no abre PR, no modifica `main` y no publica datos.
+
 ## Versión imprimible
 
 La sección `Aula` incluye una hoja breve de preparación de sesión. Puede imprimirse desde el botón de la interfaz o con la opción de impresión del navegador.
@@ -132,4 +144,4 @@ La decisión final debe confirmarla Joel antes de crear licencias definitivas.
 
 ## Próximos pasos
 
-- MVP 0.7: revisión periódica asistida que genere issue o PR, sin publicar automáticamente.
+- MVP 1.0: recurso estable de portfolio con licencia definida, accesibilidad revisada, fuentes trazables y flujo de actualización documentado.

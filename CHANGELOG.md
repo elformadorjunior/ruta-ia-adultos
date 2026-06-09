@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0 - 2026-06-09
+
+- Añadido workflow `periodic-review.yml` para revisión periódica asistida mensual y ejecución manual.
+- Añadido `scripts/build-review-report.mjs` para generar un informe consolidado de revisión.
+- Configurada la revisión periódica para subir informes como artifact, sin commits ni publicación automática.
+- Documentada la diferencia entre revisión manual, revisión periódica asistida y publicación humana.
+- Actualizados README, metadata, memoria maestra y documentación de automatización.
+
 ## 0.6.0 - 2026-06-09
 
 - Añadido workflow manual `manual-validation.yml` para ejecutar validación de datos bajo demanda.

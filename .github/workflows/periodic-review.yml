@@ -1,0 +1,44 @@
+name: Revision periodica asistida
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 1 * *"
+
+jobs:
+  review-context:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Crear carpeta de informes
+        run: mkdir -p reports
+
+      - name: Validar datos
+        run: node scripts/validate-data.mjs
+
+      - name: Generar informe de revision
+        run: node scripts/build-review-report.mjs --output=reports/revision-periodica.md
+
+      - name: Comprobar enlaces opcionalmente
+        continue-on-error: true
+        run: node scripts/check-links.mjs > reports/check-links.txt 2>&1
+
+      - name: Recordatorio de revision humana
+        run: |
+          echo "Esta accion no publica, no hace commits y no modifica main."
+          echo "El artifact generado es un apoyo para revision humana."
+
+      - name: Subir informe como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: revision-periodica-ruta-ia
+          path: reports/

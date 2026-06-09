@@ -1,13 +1,13 @@
 # Futura automatizacion
 
-MVP 0.6 activa una validacion manual bajo demanda. No activa automatizacion periodica ni publicacion automatica.
+MVP 0.7 activa una revision periodica asistida. No publica automaticamente ni modifica `main`.
 
 ## Evolucion por fases
 
 1. **Validacion local.** Mantener `scripts/validate-data.mjs` como comprobacion ligera sin dependencias externas.
 2. **Validacion manual antes de publicar.** Revisar datos, fuentes, README, metadata y changelog antes de cualquier despliegue.
 3. **GitHub Action manual.** En MVP 0.6 existe un workflow con `workflow_dispatch` para ejecutar el validador y generar un informe de fuentes.
-4. **Action programada sin publicacion directa.** En una fase posterior, una tarea mensual o trimestral podria generar un informe, issue o PR.
+4. **Action programada sin publicacion directa.** En MVP 0.7 existe una tarea mensual que genera un informe como artifact.
 5. **Revision humana.** Joel o la persona responsable revisa cambios, fuentes y lenguaje institucional.
 6. **Publicacion.** Solo se publica despues de aprobar la revision.
 
@@ -19,9 +19,9 @@ MVP 0.6 activa una validacion manual bajo demanda. No activa automatizacion peri
 - No debe anadir secretos, login, analitica ni recogida de datos personales.
 - Si abre un PR, debe marcar claramente que es una propuesta pendiente de revision.
 
-## Borrador orientativo
+## Workflows actuales
 
-El workflow manual actual se limita a:
+El workflow manual se limita a:
 
 ```yaml
 name: Validar datos
@@ -42,3 +42,16 @@ jobs:
 ```
 
 Este workflow no hace commits, no modifica `main`, no publica datos oficiales y no sustituye la revision humana.
+
+El workflow periodico actual:
+
+```yaml
+name: Revision periodica asistida
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 1 * *"
+```
+
+Genera `reports/revision-periodica.md` y `reports/check-links.txt`, los sube como artifact y no modifica el repositorio.

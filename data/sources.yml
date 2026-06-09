@@ -1,4 +1,4 @@
-version: "0.6.0"
+version: "0.7.0"
 ultima_revision_global: "2026-06-09"
 criterio: "Inventario de fuentes ya presentes en los datos del MVP. No acredita vigencia; exige revision humana antes de uso docente o publicacion."
 fuentes:

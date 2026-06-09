@@ -1,5 +1,5 @@
 title: "Ruta IA para Adultos · El Formador Junior"
-version: "0.6.0"
+version: "0.7.0"
 status: "mvp"
 date: "2026-06-09"
 language: "es"
@@ -38,5 +38,7 @@ ux:
   hero_asset: "assets/hero-estudiar-ia.png"
 quality:
   manual_workflow: ".github/workflows/manual-validation.yml"
+  periodic_review_workflow: ".github/workflows/periodic-review.yml"
   source_report_script: "scripts/report-sources.mjs"
+  periodic_report_script: "scripts/build-review-report.mjs"
   optional_link_check_script: "scripts/check-links.mjs"
