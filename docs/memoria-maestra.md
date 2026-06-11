@@ -50,6 +50,12 @@ El MVP 0.7 añade una acción programada mensual y ejecutable manualmente. Su sa
 
 La revisión periódica asistida puede señalar fuentes pendientes, estructura de catálogo, estado de fichas y avisos de enlaces, pero no abre publicación automática ni reemplaza la decisión humana.
 
+## Licencia del MVP 0.8
+
+El MVP 0.8 cierra la decisión de licencia separando código y contenidos. El código se publica bajo MIT y los contenidos pedagógicos propios bajo CC BY-NC 4.0.
+
+Las fuentes oficiales citadas o enlazadas no se relicencian en este repositorio. Esta separación evita confundir reutilización técnica, reutilización pedagógica y materiales de terceros.
+
 ## Arquitectura técnica
 
 La herramienta se implementa como web estática:
@@ -66,6 +72,7 @@ La herramienta se implementa como web estática:
 - `.github/workflows/manual-validation.yml`, `scripts/report-sources.mjs` y `scripts/check-links.mjs` para validación semiautomática manual;
 - `.github/workflows/periodic-review.yml` y `scripts/build-review-report.mjs` para revisión periódica asistida con informes como artifact;
 - sección `Aula` y reglas `@media print` para uso imprimible en clase.
+- `LICENSE-CODE.md`, `LICENSE-CONTENT.md` y `docs/licencia.md` para separar licencia de código, contenidos y fuentes externas.
 
 No hay backend, base de datos, login, analítica ni envío de respuestas.
 
