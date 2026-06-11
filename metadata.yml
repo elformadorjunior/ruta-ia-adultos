@@ -1,7 +1,7 @@
 title: "Ruta IA para Adultos · El Formador Junior"
-version: "0.7.0"
+version: "0.8.0"
 status: "mvp"
-date: "2026-06-09"
+date: "2026-06-11"
 language: "es"
 type: "kit metodológico docente"
 audience:
@@ -42,3 +42,9 @@ quality:
   source_report_script: "scripts/report-sources.mjs"
   periodic_report_script: "scripts/build-review-report.mjs"
   optional_link_check_script: "scripts/check-links.mjs"
+license:
+  code: "MIT"
+  code_file: "LICENSE-CODE.md"
+  content: "CC BY-NC 4.0"
+  content_file: "LICENSE-CONTENT.md"
+  notes: "Las fuentes oficiales citadas o enlazadas no se relicencian en este repositorio."

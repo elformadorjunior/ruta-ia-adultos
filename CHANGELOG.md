@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0 - 2026-06-11
+
+- Definida licencia del código bajo MIT en `LICENSE-CODE.md`.
+- Definida licencia de contenidos pedagógicos propios bajo CC BY-NC 4.0 en `LICENSE-CONTENT.md`.
+- Sustituido `docs/licencia-pendiente.md` por `docs/licencia.md`.
+- Actualizados README y metadata para separar código, contenidos y fuentes externas.
+
 ## 0.7.0 - 2026-06-09
 
 - Añadido workflow `periodic-review.yml` para revisión periódica asistida mensual y ejecución manual.

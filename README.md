@@ -8,7 +8,7 @@ Este proyecto es personal y de portfolio técnico-docente. No es un recurso ofic
 
 ## Estado
 
-MVP 0.7.0: revisión periódica asistida que genera informes revisables sin publicar automáticamente.
+MVP 0.8.0: licencia definida para código y contenidos, manteniendo revisión humana y publicación prudente.
 
 La web sigue siendo estática, compatible con GitHub Pages y sin backend, login, analítica, cookies innecesarias ni recogida de datos personales.
 
@@ -37,6 +37,7 @@ La web sigue siendo estática, compatible con GitHub Pages y sin backend, login,
 - `.github/workflows/periodic-review.yml`: revisión periódica asistida con artifact de informe.
 - `docs/actualizacion-contexto.md`: flujo de actualización humana.
 - `docs/futura-automatizacion.md`: fases prudentes para automatización futura.
+- `docs/licencia.md`: alcance de licencias de código, contenidos y fuentes externas.
 - `docs/mvp-05-aula-accesibilidad.md`: revisión de aula, móvil, impresión y accesibilidad básica.
 - `docs/mvp-06-validacion-manual.md`: validación semiautomática manual e informe de fuentes.
 
@@ -135,12 +136,13 @@ La automatización puede ayudar a detectar cambios, preparar informes o abrir pr
 
 ## Licencia
 
-Pendiente de decisión. Recomendación documentada en `docs/licencia-pendiente.md`:
+La licencia queda separada por alcance:
 
-- Código: MIT.
-- Contenidos: CC BY 4.0 o CC BY-NC 4.0.
+- Código: MIT, en `LICENSE-CODE.md`.
+- Contenidos pedagógicos propios: CC BY-NC 4.0, en `LICENSE-CONTENT.md`.
+- Fuentes oficiales enlazadas o citadas: pertenecen a sus organismos correspondientes y no se relicencian.
 
-La decisión final debe confirmarla Joel antes de crear licencias definitivas.
+Ver detalle en `docs/licencia.md`.
 
 ## Próximos pasos
 
